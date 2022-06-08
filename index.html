@@ -3,8 +3,9 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=0.5">
   <meta charset="utf-8">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="bootstrap.min.css" rel="stylesheet">
 	<title>404error</title>
+	<script type="text/javascript" src="bootstrap5.bundle.min.js"></script>
 	<style type="text/css">
 
 .page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
@@ -27,9 +28,9 @@
 			 
 .link_404{			 
 	color: #fff;
-    padding: 10px 20px;
+    padding: 2px 20px;
     background: #39ac31;
-    margin: 0;
+    margin: 0px 0px 10px 0px;
     display: inline-block;}
 .content_box_404{ margin-top:-50px;}
 footer{			 
@@ -60,7 +61,7 @@ footer{
 		<h3>Look like you're lost</h3>
 		<p>the page you are looking for not avaible!</p>
 		
-		<a href="" class="link_404">Go to Home</a>
+		<a href="" class="link_404 btn">Go to Home</a>
 	</div>
 		</div>
 		</div>
@@ -70,31 +71,42 @@ footer{
 <footer class="footer fixed-bottom">
 	<div class="container">
 	<div class="row text-center">
-		<div class="col-sm-4 " >
-			<h3><a href="">Contat Us</a></h3>
-			<ul class="row text-center">
-			 <li><a href="#">Jobs</a></li>
-             <li><a href="#">Support</a></li>
-             <li><a href="#">Sponsorships</a></li>
+		<div class="col-sm-4 dropdown" >
+			<h3 class="mb-2 dropdown-toggle " data-bs-toggle="dropdown" type="button"><a href="">Contat Us</a></h3>
+			<ul class="row text-center dropdown-menu">
+			 <li><a class="dropdown-item" href="#">Jobs</a></li>
+			 <li><hr class="dropdown-divider" ></hr></li>
+             <li><a class="dropdown-item" href="#">Support</a></li>
+             <li><hr class="dropdown-divider" ></hr></li>
+             <li><a class="dropdown-item" href="#">Sponsorships</a></li>
          </ul>
 		</div>
-		<div class="col-sm-4">
-			<h3><a href="">About Us</a></h3>
-			<ul class="row text-center" >
-				<li><a href="#">Demo</a></li>
-                <li><a href="#">Customer</a></li>
-                <li><a href="#">Terms Of Services</a></li>
+		<div class="col-sm-4 dropdown">
+			<h3 class="mb-2 dropdown-toggle " data-bs-toggle="dropdown" type="button"><a href="" >About Us</a></h3>
+			<ul class="row text-center dropdown-menu" >
+				<li><a class="dropdown-item" href="#">Demo</a></li>
+				<li><hr class="dropdown-divider" ></hr>
+                <li><a class="dropdown-item" href="#">Customer</a></li>
+                <li><hr class="dropdown-divider" ></hr>
+                <li><a class="dropdown-item" href="#">Terms Of Services</a></li>
 			</ul>
                     
 		</div>
-		<div class="col-sm-4 " >
-			<h3 class="mb-2"><a href="">Visit Us</a></h3>
-			<ul class="row text-center">
-				<li><a href="#">Facebook</a></li>
-                <li><a href="#">Youtube</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-		</div>
+		<div class="col-sm-4 dropdown">
+      <h3 class="mb-2 dropdown-toggle " data-bs-toggle="dropdown" type="button"><a>Visit Us</a><span class="caret"></span></h3>
+      <ul class=" dropdown-menu">
+              <li><a class="dropdown-item" href="#">Facebook</a></li>
+              <li><hr class="dropdown-divider" ></hr></li>
+              <li><a class="dropdown-item" href="#">Youtube</a></li>
+              <li><hr class="dropdown-divider" ></hr></li>
+              <li><a class="dropdown-item" href="#">Twitter</a></li>
+              <li><hr class="dropdown-divider" ></hr></li>
+              <li><a class="dropdown-item" href="#">Gmail</a></li>
+              <li><hr class="dropdown-divider" ></hr></li>
+              <li><a class="dropdown-item" href="#">Instagram</a></li>
+          </ul>
+        </div>
+		
 	</div>
 </div>
 <div class="text-center cpy-right">
